@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+/* font family's */
+
+
+
+.poppins-thin {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+.inter-font {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.manrope-font {
+    font-family: "Manrope", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* nav bar */
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    max-width: 1440px;
+    justify-content: space-between;
+    margin: 87px auto;
+}
+
+.nav-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgba(58, 58, 58, 1);
+}
+
+.menu-container {
+    display: flex;
+    list-style: none;
+    gap: 34px;
+
+}
+
+.menu-content {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgba(58, 58, 58, 1);
+}
+
+/* header section */
+.header {
+    display: flex;
+    max-width: 1440px;
+    height: 475px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px auto 70px;
+}
+
+.header-title {
+    font-size: 3.25rem;
+    font-weight: bold;
+    color: rgba(58, 58, 58, 1);
+}
+
+.header-descript {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgba(58, 58, 58, 1);
+}
+
+.btn {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #E02C6D;
+    padding: 10px 56px 10px 24px;
+    border-radius: 41px;
+    margin-top: 16px;
+}
+
+.camera-contaainer {
+    height: 475px;
+    width: 475px;
+}
+
+.camera {
+    background-image: url("../images/Circle\ design.svg");
+    width: 100%;
+}
+
+/* sponsor */
+.sponsor {
+    display: grid;
+    width: 1110px;
+    height: 110px;
+    margin: 59px auto 100px;
+    grid-template-columns: repeat(7, 1fr);
+
+
+}
+
+/* responsive section */
+@media screen and (max-width: 576px) {
+    .sponsor {
+        width: 360px;
+        height: 100%;
+        margin: 60px 75px;
+        grid-template-columns: repeat(4, 1fr);
+        /* grid-template-rows: repeat(2,1fr); */
+        gap: 15px;
+        text-align: center;
+    }
+    .menu-container {
+        margin-top: 20px;
+        gap: 15px;
+    }
+    .nav-bar,
+    .menu-container {
+        flex-direction: column;
+
+    }
+
+    .header {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 30px;
+        height: 800px;
+        /* margin-top: 50px; */
+    }
+
+}
