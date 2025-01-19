@@ -4,6 +4,10 @@
     border: 0;
 }
 
+body {
+    /* background-color: rgba(170, 170, 170, 1); */
+}
+
 /* font family's */
 
 
@@ -30,12 +34,41 @@
     font-style: normal;
 }
 
+/* shared style */
+.display-flex {
+    display: flex;
+}
+
+.display-grid {
+    display: grid;
+}
+
+.cord-title {
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: rgba(24, 25, 31, 1);
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.cord-descript {
+    font-size: 0.87rem;
+    font-weight: bold;
+    line-height: 143%;
+    margin-top: 27px;
+    color: rgba(120, 120, 133, 1);
+}
+
 /* nav bar */
 
 .nav-bar {
-    display: flex;
+
     align-items: center;
-    max-width: 1440px;
+    max-width: 1250px;
     justify-content: space-between;
     margin: 87px auto;
 }
@@ -47,7 +80,7 @@
 }
 
 .menu-container {
-    display: flex;
+
     list-style: none;
     gap: 34px;
 
@@ -59,10 +92,20 @@
     color: rgba(58, 58, 58, 1);
 }
 
+.magnifying {
+    width: 24px;
+    height: 24px;
+}
+
+.shopping-cart {
+    width: 36px;
+    height: 36px;
+}
+
 /* header section */
 .header {
-    display: flex;
-    max-width: 1440px;
+
+    max-width: 1250px;
     height: 475px;
     align-items: center;
     justify-content: space-between;
@@ -79,6 +122,11 @@
     font-size: 1rem;
     font-weight: 600;
     color: rgba(58, 58, 58, 1);
+}
+
+.arrow {
+    margin-left: -40px;
+    margin-bottom: -7px;
 }
 
 .btn {
@@ -103,15 +151,137 @@
 
 /* sponsor */
 .sponsor {
-    display: grid;
     width: 1110px;
-    height: 110px;
-    margin: 59px auto 100px;
-    grid-template-columns: repeat(7, 1fr);
+    height: 39px;
+    margin: 36px auto 100px;
+    flex-direction: row;
+    justify-content: space-evenly;
 
+}
+/* .divider{
+    margin: 0px auto 100px;
+} */
+.sponsor-img-container{
+    margin: 36px auto 36px;
+}
+.divider{
+    align-items: center;
+}
+.alibaba{
+    width: 55px;
+    height: 31px;
+}
+.amazon{
+    width: 84px;
+    height: 25px;
+}
+.daraz{
+    width: 84px;
+    height: 26px;
+}
+.ebay{
+    width: 99px;
+    height: 39px;
+}
+.rakuten{
+    width: 97px;
+    height: 28px;
+}
+.walmart{
+    width: 111px;
+    height: 26px;
+}
+.target{
+    width: 91px;
+    height: 38px;
+}
+/* Popular Collection */
+.Collection {
+    width: 1030px;
+    height: 1662px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.section-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: rgba(58, 58, 58, 1);
+    text-align: center;
 
 }
 
+.collection-container {
+    width: 1030px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 100px auto;
+    margin-top: 30px;
+    gap: 30px;
+
+}
+
+.cord {
+    width: 300px;
+    height: 426px;
+    align-items: center;
+    padding: 17px 14px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+.see-more{
+    margin-left: 1385px;
+    margin-top: -90px;
+    background-color: #fff;
+}
+.featured{
+    width: 1110px ;
+    height: 270px;
+    margin: 100px auto;
+    align-items: center;
+    justify-content: center;
+    gap: 96px;
+}
+.feature-title{
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: rgba(10, 8, 38, 1);
+    margin-bottom: 16px;
+}
+.feature-descript{
+    font-size: 1rem;
+    font-weight: 700;
+    color: #6C6C6C;
+    margin-bottom: 16px;
+}
+.join-btn{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #E02C6D;
+    padding: 10px 56px 10px 24px;
+}
+.foter{
+    width: 100%;
+    height: 239px;
+    background-color: rgba(10,8,38);
+}
+.content{
+    width: 262px;
+    height: 139px;
+    text-align: center;
+    justify-content: center;
+    margin: 50px auto;
+}
+.foter h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+}
+.para{
+    font-size: 0.87rem;
+    font-weight: 700;
+    color: #D9DBE1;
+}
 /* responsive section */
 @media screen and (max-width: 576px) {
     .sponsor {
@@ -119,14 +289,24 @@
         height: 100%;
         margin: 60px 75px;
         grid-template-columns: repeat(4, 1fr);
-        /* grid-template-rows: repeat(2,1fr); */
         gap: 15px;
-        text-align: center;
+        /* text-align: center; */
+
     }
+
+
+    .collection-container {
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 300px;
+        height: 476px;
+    }
+
+    
     .menu-container {
         margin-top: 20px;
         gap: 15px;
     }
+
     .nav-bar,
     .menu-container {
         flex-direction: column;
